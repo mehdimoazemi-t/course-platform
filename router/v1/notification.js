@@ -6,4 +6,7 @@ const notificationController = require("../../controllers/v1/notificationControl
 notificationRouter.route("/")
     .post(notificationController.create)
 
+notificationRouter.route("/:id/see")
+    .put(notificationController.see)
+
 module.exports = notificationRouter
